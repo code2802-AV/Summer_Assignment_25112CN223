@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int i, j, rows;
+    char ch = 'A';
+
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
+
+    for(i = 1; i <= rows; i++) {
+        for(j = 1; j <= i; j++) {
+            // Prints character and increments for each position
+            printf("%c ", ch);
+            ch++;
+        }
+        printf("\n");
+      
+        ch = 'A'; 
+    }
+    return 0;
+}
